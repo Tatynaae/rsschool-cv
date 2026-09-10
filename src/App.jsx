@@ -114,7 +114,7 @@ function App() {
                 <h3>Kyrgyz/Russian: Native</h3>
                 <h3>Korean: A2</h3>
                 <h3>Japanese: A1</h3>
-                <h3>Genrman: A1</h3>
+                <h3>German: A1</h3>
             </section>
         </main>
 
