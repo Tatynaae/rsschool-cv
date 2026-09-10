@@ -23,6 +23,11 @@ function App() {
         </header>
 
         <main className="container">
+            <section id="about" className="card">
+                <h2>About Me</h2>
+                <p>..</p>
+            </section>
+
             <section id="skills" className="card">
                 <h2>Skills</h2>
                 <p className="card_t">Frontend</p>
@@ -64,6 +69,52 @@ function App() {
                     <li>NGINX</li>
                     <li>CI/CD</li>
                 </ul>
+            </section>
+
+            <section id="code" className="card">
+                <h2>Code Example</h2>
+            </section>
+
+            <section id="experience" className="card">
+                <h2>Experience</h2>
+                <div className="timeline-item">
+                    <h3>
+                        Fullstack Developer |{' '}
+                        <a href="https://axelhub.com/" target="_blank" rel="noopener noreferrer">
+                            Axelhub
+                        </a>
+                    </h3>
+                    <p className="date">2024 Jan. | Present</p>
+                </div>
+                <div className="timeline-item">
+                    <h3>
+                        Junior Developer |{' '}
+                        <a href="https://mdigital.kg/" target="_blank" rel="noopener noreferrer">
+                            MDigital
+                        </a>
+                    </h3>
+                    <p className="date">2022 | 2023</p>
+                </div>
+            </section>
+
+            <section id="education" className="card">
+                <h2>Education</h2>
+                <div className="timeline-item">
+                    <h3>Computer Science | International Meta-Science University</h3>
+                    <p className="date">2022 | 2025</p>
+                </div>
+                <div className="timeline-item">
+                    <h3>Motion Web | Frontend Development Course</h3>
+                    <p className="date">2022 | 2023</p>
+                </div>
+            </section>
+
+            <section id="english" className="card">
+                <h2>English Proficiency: B2</h2>
+                <h3>Kyrgyz/Russian: Native</h3>
+                <h3>Korean: A2</h3>
+                <h3>Japanese: A1</h3>
+                <h3>Genrman: A1</h3>
             </section>
         </main>
 

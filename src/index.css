@@ -203,6 +203,29 @@ body {
   font-weight: 500;
 }
 
+.timeline-item {
+  padding-left: 16px;
+  border-left: 3px solid var(--accent);
+  margin-bottom: 16px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item a {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.date {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+
 @media (max-width: 700px) {
   .header-inner {
     justify-content: center;
