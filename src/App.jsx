@@ -25,7 +25,10 @@ function App() {
         <main className="container">
             <section id="about" className="card">
                 <h2>About Me</h2>
-                <p>..</p>
+                <p>Hi, I’m Tatyana.
+                    I'm a Full-Stack Developer with over 4 years of experience building scalable systems for aviation, logistics, e-commerce, and banking.
+                    I specialize in creating robust backend architectures and seamless user interfaces.
+                    I’m currently exploring new projects where I can help solve complex technical challenges and scale digital products.</p>
             </section>
 
             <section id="skills" className="card">
