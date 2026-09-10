@@ -9,7 +9,7 @@ function App() {
                 </div>
                 <div className="intro">
                     <h1>Absatarova Tatyna</h1>
-                    <p className="role">Fullstack Developer</p>
+                    <p className="role">Full-Stack Developer</p>
                     <ul className="contacts">
                         <li><a href="mailto:tatynaerkinbek@gmail.com">tatynaerkinbek@gmail.com</a></li>
                         <li><a href="https://github.com/Tatynaae" target="_blank" rel="noopener noreferrer">GitHub</a></li>
@@ -76,6 +76,36 @@ function App() {
 
             <section id="code" className="card">
                 <h2>Code Example</h2>
+                <p className="card_t" >
+                    <a href='https://www.codewars.com/kata/649a8ed2c6ba0600314b258d/train/sql'>Successful Film Stars Analysis</a>
+                </p>
+                <pre className="code-block"><code>{`WITH film_rentals AS (
+  SELECT
+    f.film_id,
+    COUNT(r.rental_id) AS rental_count
+  FROM film f
+  LEFT JOIN inventory i ON i.film_id = f.film_id
+  LEFT JOIN rental r ON r.inventory_id = i.inventory_id
+  GROUP BY f.film_id
+),
+actor_films AS (
+  SELECT
+    fa.actor_id,
+    fa.film_id,
+    fr.rental_count
+  FROM film_actor fa
+  JOIN film_rentals fr ON fr.film_id = fa.film_id
+)
+SELECT
+  a.actor_id,
+  a.first_name || ' ' || a.last_name AS full_name,
+  COUNT(DISTINCT af.film_id) AS film_count
+FROM actor_films af
+JOIN actor a ON a.actor_id = af.actor_id
+GROUP BY a.actor_id, a.first_name, a.last_name
+HAVING COUNT(DISTINCT af.film_id) >= 20
+   AND MIN(af.rental_count) >= 7
+ORDER BY film_count DESC, a.actor_id ASC;`}</code></pre>
             </section>
 
             <section id="experience" className="card">

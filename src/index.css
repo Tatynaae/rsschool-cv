@@ -203,6 +203,17 @@ body {
   font-weight: 500;
 }
 
+.code-block {
+  background: #0f172a;
+  color: #e2e8f0;
+  border-radius: 10px;
+  padding: 16px 20px;
+  overflow-x: auto;
+  font-family: monospace;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
 .timeline-item {
   padding-left: 16px;
   border-left: 3px solid var(--accent);
