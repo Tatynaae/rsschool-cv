@@ -22,7 +22,50 @@ function App() {
             </div>
         </header>
 
-        <main></main>
+        <main className="container">
+            <section id="skills" className="card">
+                <h2>Skills</h2>
+                <p className="card_t">Frontend</p>
+                <ul className="skills-list">
+                    <li>Javascript</li>
+                    <li>Typescript</li>
+                    <li>React.js</li>
+                    <li>React Native</li>
+                    <li>Vue.js</li>
+                    <li>Next.js</li>
+                    <li>Electron.js</li>
+                    <li>HTML &amp; CSS</li>
+                    <li>Responsive Design</li>
+                    <li>Tanstack Query</li>
+                    <li>Bootstrap</li>
+                    <li>Bootstrap</li>
+                    <li>Bootstrap &amp; Tailwind CSS</li>
+                    <li>Ant Design &amp; ShadCN</li>
+                </ul>
+
+                <p className="card_t">Backend</p>
+                <ul className="skills-list">
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>Filament</li>
+                    <li>Go</li>
+                    <li>REST APIs</li>
+                    <li>MySql</li>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                </ul>
+
+                <p className="card_t">Other</p>
+                <ul className="skills-list">
+                    <li>Git &amp; GitHub</li>
+                    <li>Docker</li>
+                    <li>NGINX</li>
+                    <li>CI/CD</li>
+                </ul>
+            </section>
+        </main>
 
         <footer className="footer">
             <a href="https://github.com/Tatynaae" target="_blank" rel="noopener noreferrer">

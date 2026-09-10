@@ -121,6 +121,15 @@ body {
   background: rgba(255, 255, 255, 0.6);
 }
 
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 30px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .footer {
   text-align: center;
   padding: 20px 40px;
@@ -146,4 +155,86 @@ body {
   display: block;
   width: 64px;
   height: 64px;
+}
+
+.card {
+  scroll-margin-top: 70px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+
+.card_t {
+  color: #0f172a;
+  opacity: 0.5;
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  color: var(--accent-dark);
+  margin-bottom: 14px;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.card h3 {
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.skills-list li {
+  background: #eef2ff;
+  color: var(--accent-dark);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (max-width: 700px) {
+  .header-inner {
+    justify-content: center;
+    text-align: center;
+    padding: 24px 20px;
+  }
+
+  .intro {
+    align-items: center;
+  }
+
+  .contacts {
+    justify-content: center;
+  }
+
+  .intro h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media print {
+  .header {
+    background: none;
+    color: var(--text);
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
 }
