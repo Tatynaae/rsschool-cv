@@ -1,1 +1,0 @@
-https://tatynaae.github.io/rsschool-cv/
