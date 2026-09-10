@@ -22,6 +22,17 @@ function App() {
             </div>
         </header>
 
+        <nav className="nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#code">Code Example</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#english">English</a></li>
+            </ul>
+        </nav>
+
         <main className="container">
             <section id="about" className="card">
                 <h2>About Me</h2>
